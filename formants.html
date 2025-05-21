@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Formant Visualizer</title>
   <style>
     body {
@@ -123,6 +123,23 @@
       height: 2px;
       width: 210px;
     }
+    .graph-y-label {
+      position: absolute;
+      left: -55px;
+      top: 50%;
+      transform: rotate(-90deg) translateX(-50%);
+      transform-origin: center;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .graph-x-label {
+      position: absolute;
+      bottom: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 14px;
+      font-weight: bold;
+    }
   </style>
 </head>
 <body>
@@ -143,6 +160,8 @@
       <div class="graph-border-top"></div>
       <div class="graph-border-right"></div>
       <div class="graph-border-bottom-visible"></div>
+      <div class="graph-y-label">Tongue height</div>
+      <div class="graph-x-label">Tongue backness</div>
     </div>
   </div>
 
